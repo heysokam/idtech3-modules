@@ -154,7 +154,7 @@ typedef struct {
   cPlane plane;         // surface normal at impact, transformed to world space
   i32    surfaceFlags;  // surface hit
   i32    contents;      // contents on other side of surface hit
-  i32    entityNum;     // entity the contacted sirface is a part of
+  i32    entityNum;     // entity the contacted surface is a part of
 } Trace;
 // trace->entityNum can also be 0 to (MAX_GENTITIES-1)
 // or ENTITYNUM_NONE, ENTITYNUM_WORLD

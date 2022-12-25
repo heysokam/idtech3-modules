@@ -8,7 +8,7 @@
 #include <stdlib.h>  // For exit()
 #include <time.h>    // For clock() and CLOCKS_PER_SEC
 // Engine modules
-#include "../types.h"
+#include "../types/core.h"
 
 //..............................
 // cfg.h

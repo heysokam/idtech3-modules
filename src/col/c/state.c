@@ -322,6 +322,28 @@ PatchCol* CM_GeneratePatchCollide(i32 width, i32 height, vec3* points) {
 //.................................
 
 //..................
+// CM_EchoTest :
+//   New function.
+//   echo test values
+//..................
+void CM_EchoTest(void) {
+#if 0
+  echo("%s: .......", __func__);
+  echo("%s: cm.name  = %s", __func__, cm.name);
+  echo("%s: cm.vised = %i", __func__, cm.vised);
+  // echo("%s: cm.entityString = %s", __func__, cm.entityString);
+  echo("%s: .......", __func__);
+#endif
+}
+
+//..................
+// CM_GetName :
+//   New function.
+//   Returns the name of the currenly stored clipMap (cm.name)
+//..................
+void CM_GetName(char* name, i32 maxchars) { strncpyz(name, cm.name, maxchars); }
+
+//..................
 // CM_ClipHandleToModel
 //   Returns a pointer to the clipModel data, for the currently loaded map, stored at handle id number
 //   Will return the box_model handle when passing BOX_MODEL_HANDLE as input

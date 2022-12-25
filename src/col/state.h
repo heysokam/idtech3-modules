@@ -58,6 +58,7 @@ extern Facet      facets[MAX_FACETS];
 
 //..............................
 // State Setters
+//..............................
 void      CM_StoreLeafs(LeafList* ll, i32 nodeNum);
 void      CM_StoreBrushes(LeafList* ll, i32 nodeNum);
 cHandle   CM_TempBoxModel(const vec3 mins, const vec3 maxs, int capsule);
@@ -65,6 +66,11 @@ PatchCol* CM_GeneratePatchCollide(i32 width, i32 height, vec3* points);
 
 //..............................
 // State Getters
+//..............................
+// New
+void    CM_EchoTest(void);
+void    CM_GetName(char* name, i32 maxchars);
+// Original
 void    CM_BoxLeafnums_r(LeafList* ll, i32 nodeNum);
 cModel* CM_ClipHandleToModel(cHandle handle);
 cHandle CM_InlineModel(i32 index);
