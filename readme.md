@@ -10,10 +10,13 @@ Done:
 - [x] BSP loading (full spec, including patches)
 - [x] Collision resolution system
 - [x] Simplified bbox-to-bsp solving code, with no dependencies and no loading
+- [x] Simplified bsp map loader (collision data, no patches), with no dependencies
 
 TODO:
 - [ ] Disconnect the collision system from memory allocation. Should take a pointer to the data as input instead.
   - [x] bbox-to-bsp only
   - [ ] full bsp spec
 - [ ] Disconnect BSP loading from memory allocation. Should return the data instead.
+  - [x] simplified: collision, no patches
+  - [ ] full bsp spec, including patches
 - [ ] Script to generate Single Header modules from the code, in stb_ style.
