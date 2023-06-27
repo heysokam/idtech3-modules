@@ -142,7 +142,7 @@ typedef struct leafList_s {
   i32* list;
   vec3 bounds[2];
   i32  lastLeaf;  // for overflows where each leaf can't be stored individually
-  void (*storeLeafs)(cMap* cm, struct leafList_s* ll, i32 nodeNum);
+  void (*storeLeafs)(struct leafList_s* ll, i32 nodeNum);
 } LeafList;
 //....................................
 // a trace is returned when a box is swept through the world
