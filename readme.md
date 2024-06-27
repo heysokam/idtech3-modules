@@ -1,9 +1,6 @@
 # id-Tech3 Modules
 Quick and dirty extraction of id-Tech3 Engine elements, so that they don't depend on anything other than the stdlib.  
 
-Mostly a sandbox for extracting elements to be implemented into [id-Tech3+](https://github.com/heysokam/id3plus).  
-Code in that repo should be an overall better fit for any project, since its also made modular in nature.  
-
 ## Description
 Each individual module contains as few dependencies as possible.  
 This is so they can be integrated into a different project, or wrapped for usage in a different language.  
